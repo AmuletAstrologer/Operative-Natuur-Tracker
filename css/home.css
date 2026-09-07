@@ -96,7 +96,7 @@ body {
 
 .route-item {
   padding: 16px 0 18px;
-   background-image: url("image.jpeg");
+   background-image: url("../images/image.jpeg");
   /* border-bottom: 5px solid rgba(0, 0, 0, 0.08); */
   border: 3px solid #2d2d2d;
   background-color:  lightgray;
