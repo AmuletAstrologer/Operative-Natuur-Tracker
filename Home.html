@@ -1,70 +1,104 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   <link rel="stylesheet" href="css/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>Operative Natuur Tracker</title>
-</head>
-<body>
-
-
-
-    <!-- Info -->
-    <!-- Search -->
-
+  </head>
+  <body>
+   <div class="app-frame">
       <header class="hero">
+        <div class="help-button" aria-label="Help">
+          <span>?</span>
+        </div>
 
-    <div class="hero-content">
+         <div class="search-box" role="search">
+          <input
+            type="search"
+            id="mySearch"
+            name="q"
+            placeholder="Search..."
+            aria-label="Search through site content"
+          />
+          <button type="button" aria-label="Search">
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </header>
 
-      <div class="hero-text"></div>
+       <main class="dashboard">
+        <section class="routes" aria-label="Recent routes">
+          <article class="route-item">
+            <div class="route-row">
+              <span class="route-number">#1</span>
+              <span class="route-name">Nirvana Route</span>
+              <span class="route-status" aria-label="Route status"></span>
+            </div>
+            <p>
+              Ongeveer: <strong>35 Minuten</strong> Niveau: <em>Makkelijk</em>
+            </p>
+          </article>
 
+          <article class="route-item">
+            <div class="route-row">
+              <span class="route-number">#2</span>
+              <span class="route-name">Valken Route</span>
+              <span class="route-status" aria-label="Route status"></span>
+            </div>
+            <p>
+              Ongeveer: <strong>55 Minuten</strong> Niveau: <em>Middelmatig</em>
+            </p>
+          </article>
+
+          <article class="route-item">
+            <div class="route-row">
+              <span class="route-number">#3</span>
+              <span class="route-name">Eiken Route</span>
+              <span class="route-status" aria-label="Route status"></span>
+            </div>
+            <p>
+              Ongeveer: <strong>145 Minuten</strong> Niveau: <em>Moeilijk</em>
+            </p>
+          </article>
+        </section>
+
+        <button type="button" class="more-routes">Bekijk meer routes...</button>
+
+        <div class="quick-actions" aria-label="Quick actions">
+          <button type="button" class="action-btn" aria-label="Go back">
+            <i class="fa fa-undo"></i>
+          </button>
+          <button type="button" class="action-btn" aria-label="Route marker">
+            <i class="fa fa-map-signs"></i>
+          </button>
+          <button type="button" class="action-btn" aria-label="Weather">
+            <i class="fa fa-cloud"></i>
+          </button>
+          <button type="button" class="action-btn sos" aria-label="SOS call">
+            <i class="fa fa-phone"></i>
+          </button>
+        </div>
+
+        <button type="button" class="primary-btn warning-btn">
+          <span>Melding Maken</span>
+          <span class="button-icon">
+            <i class="fa fa-comment"></i>
+          </span>
+        </button>
+
+        <button type="button" class="primary-btn success-btn">
+          <span>Connectie met Drone</span>
+          <span class="button-icon">
+            <i class="fa fa-link"></i>
+          </span>
+        </button>
+      </main>
     </div>
-
-  </header>
-
-
-    <!-- Recente routes -->
-
-
-  <!-- NAVIGATION -->
-  <nav>
-
-    <div class="linkjes">
-      <a href="" class="active">Home</a>
-      <a href="">*</a>
-      <a href="">*</a>
-      <a href="">*</a>
-      <a href="">*</a>
-    </div>
-  </nav>
-
-
-
-
-
-
-  <main>
-
-  <!-- Meldingen -->
-  <!-- Knop: "Connectie met Drone"  -->
-   
-    <section></section>
-    
-    <section></section>
-
-
-
-  </main>
-
-
-  <!-- FOOTER -->
-  <footer>
-
-   
-
-  </footer>
-
-</body>
+  </body>
 </html>

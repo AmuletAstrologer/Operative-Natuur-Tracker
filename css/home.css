@@ -1,0 +1,262 @@
+body {
+ /* Check this too! */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #d9d9d9;
+  padding: 24px;
+}
+
+.app-frame {
+  width: min(100%, 430px);
+  background: #ededed;
+  border: 3px solid #2d2d2d;
+  border-radius: 12px;
+  padding: 18px 18px 20px;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03);
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.help-button {
+  width: 48px;
+  height: 48px;
+  border: 3px solid #2d2d2d;
+  border-radius: 50%;
+  background: #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #2b2b2b;
+  line-height: 1;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.search-box {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #d8d8d8;
+  /* border: 3px solid #2d2d2d; */
+  /* border-radius: 18px; */
+  height: 52px;
+  overflow: hidden;
+}
+
+.search-box input {
+  flex: 1;
+  height: 100%;
+  border: 0;
+  outline: none;
+  background: transparent;
+  padding: 0 14px;
+  font-size: 1.05rem;
+  color: #2d2d2d;
+}
+
+.search-box input::placeholder {
+  color: #4f4f4f;
+  opacity: 1;
+}
+
+.search-box button {
+  width: 52px;
+  height: 52px;
+  border: 0;
+  background: #d9d9d9;
+  color: #2d2d2d;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  /* border-left: 3px solid #2d2d2d; */
+}
+
+.dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.routes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.route-item {
+  padding: 16px 0 18px;
+   background-image: url("image.jpeg");
+  /* border-bottom: 5px solid rgba(0, 0, 0, 0.08); */
+  border: 3px solid #2d2d2d;
+  background-color:  lightgray;
+  border-radius: 3%;
+}
+
+.route-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 2px;
+}
+
+.route-number {
+  font-size: 2.1rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  line-height: 1;
+  min-width: 36px;
+  margin-bottom: 30px;
+}
+
+.route-name {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #2d2d2d;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+/* Check this later! */
+
+.route-status {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background: #5a4b45;
+  margin-left: auto;
+  flex-shrink: 0;
+  box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+.route-item p {
+  font-size: 1rem;
+  color: #4b4b4b;
+  line-height: 1.4;
+  margin-left: 50px;
+  letter-spacing: -0.02em;
+}
+
+.route-item strong {
+  font-weight: 700;
+  color: #2d2d2d;
+}
+
+.route-item em {
+  font-style: normal;
+  color: #2d7c5f;
+  font-weight: 700;
+}
+
+/* Check the background, might want to split */
+.more-routes {
+  width: fit-content;
+  border: 0;
+  /* background: transparent; */
+  border: 2px solid #2d2d2d;
+  background-color: lightgray;
+  border-radius: 5px;
+  padding: 0;
+  margin: 8px 0 16px 6px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.quick-actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: 6px 0 18px;
+}
+
+.action-btn {
+  height: 66px;
+  border: 2px solid #2d2d2d;
+  border-radius: 16px;
+  background: lightgray;
+  color: #2d2d2d;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
+}
+
+.action-btn.sos {
+  background: #f4a000;
+  color: #fff;
+}
+
+.primary-btn {
+  width: 100%;
+  min-height: 54px;
+  border: 3px solid #2d2d2d;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px 0 20px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f1f1f;
+  cursor: pointer;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.08);
+}
+
+.warning-btn {
+  background: #e6eb13;
+}
+
+.success-btn {
+  background: #72d591;
+}
+
+.button-icon {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #2d2d2d;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.22);
+  font-size: 1.3rem;
+}
+
+@media (max-width: 420px) {
+  body {
+    padding: 12px;
+  }
+
+  .app-frame {
+    border-width: 2px;
+    padding: 14px 14px 18px;
+  }
+
+  .route-number {
+    font-size: 1.8rem;
+  }
+
+  .route-name {
+    font-size: 1.7rem;
+  }
+
+  .route-item p {
+    margin-left: 42px;
+    font-size: 0.92rem;
+  }
+}
+
