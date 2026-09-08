@@ -10,31 +10,51 @@
 </head>
 
 <body>
-<header>
-    <nav>
-        <div id="flex1">
+<div class="app-frame">
+    <header class="hero">
+        <div>
             <a href="Home.html" id="back-button">
-                <img src="/images/back.png" alt="Back button" style="width:42px;height:42px;">
+                <img src="/images/back.png" alt="Terug knop" style="width:42px;height:42px;">
             </a>
         </div>
-        <div id="flex2">
+
+        <div>
             <a href="sos.html" id="sos-button">
-                <img src="/images/SOS.png" alt="SOS button" style="width:42px;height:42px;">
+                <img src="/images/SOS.png" alt="SOS knop" style="width:42px;height:42px;">
             </a>
         </div>
-    </nav>
-</header>
+    </header>
 
-<main>
-    <div>
-        <h2></h2>
-        <p></p>
-    </div>
-</main>
+    <main class="navigation">
 
-<footer>
+        <code id="dm-code-raw" class=" no-wrap language-markup">
+            <div style="position:relative; padding-bottom:56.25%; height:0; overflow:hidden;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.9184760884327!2d4.481456376495879!3d51.917198471909316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c4335dd0e438b7%3A0xed54cfc9f8ebad3!2sHogeschool%20Rotterdam%20-%20Wijnhaven%20107!5e0!3m2!1snl!2snl!4v1788866789280!5m2!1snl!2snl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>" style="position:absolute; top:0; left:0; width:100%; height:100%; border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </code>
 
-</footer>
+        <section>
+            <article style="background-image:url(./images/R1.jpeg) ;">
+                <div>
+                    <span class="route-name">Nirvana Route</span>
+                </div>
+                <p>
+                    Nog: <strong>24 Minuten</strong>
+                </p>
+            </article>
+        </section>
 
+        <div>
+            <a href="weather.html" id="weather-button">
+                <img src="/images/weather.png" alt="Weer knop" style="width:42px;height:42px;">
+            </a>
+        </div>
+
+        <button type="button" class="primary-btn">
+            <span>Cancel Route</span>
+        </button>
+
+    </main>
+</div>
 </body>
 </html>
