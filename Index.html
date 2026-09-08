@@ -8,12 +8,13 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/home.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>Operative Natuur Tracker</title>
   </head>
   <body>
    <div class="app-frame">
       <header class="hero">
+        <!-- Modal moet hierop komen. -->
         <div class="help-button" aria-label="Help">
           <span>?</span>
         </div>
@@ -32,9 +33,11 @@
         </div>
       </header>
 
+      <!-- ALGEMEEN: De echte route moet later van de database komen. -->
+       <!-- Status, moet of groen, rood of grijs zijn om te laten zien of de gebruiker hem kan kiezen. -->
        <main class="dashboard">
         <section class="routes" aria-label="Recent routes">
-          <article class="route-item" style="background-image:url(./images/R1.jpeg) ;">
+          <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R1.jpeg) ;">
             <div class="route-row"> 
               <span class="route-number">#1</span>
               <span class="route-name">Nirvana Route</span>
@@ -43,9 +46,9 @@
             <p>
               Ongeveer: <strong>35 Minuten</strong> Niveau: <em>Makkelijk</em>
             </p>
-          </article>
+          </article></a>
 
-          <article class="route-item" style="background-image:url(./images/R2.png) ;">
+           <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R2.png) ;">
             <div class="route-row">
               <span class="route-number">#2</span>
               <span class="route-name">Valken Route</span>
@@ -54,9 +57,9 @@
             <p>
               Ongeveer: <strong>55 Minuten</strong> Niveau: <em style="color: orange;">Middelmatig</em>
             </p>
-          </article>
+          </article></a>
 
-          <article class="route-item" style="background-image:url(./images/R3.png);" >
+           <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R3.png);" >
             <div class="route-row">
               <span class="route-number">#3</span>
               <span class="route-name">Eiken Route</span>
@@ -66,6 +69,7 @@
               Ongeveer: <strong>145 Minuten</strong> Niveau: <em style="color: red;">Moeilijk</em>
             </p>
           </article>
+          </a>
         </section>
 
         <button type="button" class="more-routes">Bekijk meer routes...</button>
