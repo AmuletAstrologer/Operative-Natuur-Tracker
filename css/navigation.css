@@ -1,9 +1,24 @@
-.flex1 {
+body {
+    min-height: 100vh;
     display: flex;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    background: #d9d9d9;
+    padding: 24px;
 }
 
-.flex2 {
+.app-frame {
+    width: min(100%, 530px);
+    background: #ededed;
+    border: 3px solid #2d2d2d;
+    border-radius: 12px;
+    padding: 18px 18px 20px;
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.03);
+}
+
+.hero {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 18px;
 }
