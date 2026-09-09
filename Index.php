@@ -1,3 +1,33 @@
+<?php
+
+session_start();
+//might need later when login page is available
+//if (!isset($_SESSION['user_id'])) {
+//    header("Location: login.php");
+//    exit;
+//}
+
+// Connect to database
+require_once 'includes/database.php';
+/** @var mysqli $connection */
+
+$query = "INSERT INTO routes (name, time, level)
+VALUES
+('Nirvana Route', '00:35:00', 'makkelijk'),
+('Valken Route', '00:55:00', 'middelmatig'),
+('Eiken Route', '02:15:00', 'moeilijk')";
+$result = mysqli_query($connection, $query);
+
+$query = "SELECT
+            name,
+            time,
+            level
+          FROM routes";
+$result = mysqli_query($connection, $query);
+
+$routes = mysqli_fetch_all($result, MYSQLI_ASSOC);
+?>
+
 <!doctype html>
 <html lang="en">
   <head>
