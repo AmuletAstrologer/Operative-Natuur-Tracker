@@ -1,5 +1,5 @@
 body {
- /* Check this too! */
+  /* Check this too! */
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -40,6 +40,55 @@ body {
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.08);
 }
 
+.help-button :hover {
+  width: 48px;
+  height: 48px;
+    background-color: #c152ec73;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+/* The Modal (background) */
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1;
+  padding-top: 100px; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .search-box {
   flex: 1;
   display: flex;
@@ -60,6 +109,10 @@ body {
   padding: 0 14px;
   font-size: 1.05rem;
   color: #2d2d2d;
+}
+
+.search-box input:hover {
+  background-color: #c152ec73;
 }
 
 .search-box input::placeholder {
@@ -95,9 +148,10 @@ body {
 }
 
 .route-item {
+  position: relative;
   padding: 6px 0 8px;
   border: 3px solid #2d2d2d;
-  background-color:  lightgray;
+  background-color: lightgray;
   border-radius: 3%;
   background-size: auto;
 }
@@ -126,27 +180,28 @@ body {
   border-radius: 50%;
   letter-spacing: -0.04em;
   line-height: 1.1;
-    margin-bottom: 30px;
-    -webkit-text-stroke: 2px #801bf4; 
-     color: black; 
+  margin-bottom: 30px;
+  -webkit-text-stroke: 2px #801bf4;
+  color: black;
 }
 
 /* Check this later! */
 
 .route-status {
+  position: absolute;
+  top: 10px;
+  right: 10px;
   width: 18px;
   height: 18px;
   border-radius: 50%;
   background: #5a4b45;
-  margin-left: auto;
-  flex-shrink: 0;
   box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.2);
 }
 
 .route-item p {
   font-size: 1rem;
   color: #4b4b4b;
-  line-height: 1.0;
+  line-height: 1;
   margin-left: 5px;
   letter-spacing: -0.02em;
 }
@@ -162,21 +217,18 @@ body {
   font-weight: 700;
 }
 
-
-
-/* Check the background, might want to split */
 .more-routes {
-  width: fit-content;
-  border: 0;
-  /* background: transparent; */
   border: 2px solid #2d2d2d;
   background-color: lightgray;
   border-radius: 5px;
-  padding: 0;
-  margin: 8px 0 16px 6px;
+  padding: 8px 14px;
   font-size: 1.05rem;
   font-weight: 700;
   cursor: pointer;
+}
+
+.more-routes:hover {
+  background-color: palegreen;
 }
 
 .quick-actions {
@@ -230,6 +282,9 @@ body {
   background: #e6eb13;
 }
 
+.warning-btn:hover {
+  background-color: #f5f83c;
+}
 
 .success-btn {
   background: #72d591;
@@ -270,4 +325,3 @@ body {
     font-size: 0.92rem;
   }
 }
-

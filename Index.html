@@ -12,14 +12,24 @@
     <title>Operative Natuur Tracker</title>
   </head>
   <body>
-   <div class="app-frame">
+    <div class="app-frame">
       <header class="hero">
         <!-- Modal moet hierop komen. -->
         <div class="help-button" aria-label="Help">
-          <span>?</span>
+          <span id="myBtn">?</span>
         </div>
 
-         <div class="search-box" role="search">
+
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Some text in the Modal..</p>
+          </div>
+        </div>
+
+        <div class="search-box" role="search">
           <input
             type="search"
             id="mySearch"
@@ -34,41 +44,57 @@
       </header>
 
       <!-- ALGEMEEN: De echte route moet later van de database komen. -->
-       <!-- Status, moet of groen, rood of grijs zijn om te laten zien of de gebruiker hem kan kiezen. -->
-       <main class="dashboard">
+      <!-- Status, moet of groen, rood of grijs zijn om te laten zien of de gebruiker hem kan kiezen. -->
+      <main class="dashboard">
         <section class="routes" aria-label="Recent routes">
-          <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R1.jpeg) ;">
-            <div class="route-row"> 
-              <span class="route-number">#1</span>
-              <span class="route-name">Nirvana Route</span>
-              <span class="route-status" aria-label="Route status"></span>
-            </div>
-            <p>
-              Ongeveer: <strong>35 Minuten</strong> Niveau: <em>Makkelijk</em>
-            </p>
-          </article></a>
+          <a href="./Navigation.html" style="text-decoration: none"
+            ><article
+              class="route-item"
+              style="background-image: url(./images/R1.jpeg)"
+            >
+              <div class="route-row">
+                <span class="route-number">#1</span>
+                <span class="route-name">Nirvana Route</span>
+                <span class="route-status" aria-label="Route status"></span>
+              </div>
+              <p>
+                Ongeveer: <strong>35 Minuten</strong> Niveau: <em>Makkelijk</em>
+              </p>
+            </article></a
+          >
 
-           <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R2.png) ;">
-            <div class="route-row">
-              <span class="route-number">#2</span>
-              <span class="route-name">Valken Route</span>
-              <span class="route-status" aria-label="Route status"></span>
-            </div>
-            <p>
-              Ongeveer: <strong>55 Minuten</strong> Niveau: <em style="color: orange;">Middelmatig</em>
-            </p>
-          </article></a>
+          <a href="./Navigation.html" style="text-decoration: none"
+            ><article
+              class="route-item"
+              style="background-image: url(./images/R2.png)"
+            >
+              <div class="route-row">
+                <span class="route-number">#2</span>
+                <span class="route-name">Valken Route</span>
+                <span class="route-status" aria-label="Route status"></span>
+              </div>
+              <p>
+                Ongeveer: <strong>55 Minuten</strong> Niveau:
+                <em style="color: orange">Middelmatig</em>
+              </p>
+            </article></a
+          >
 
-           <a href="./Navigation.html" style="text-decoration:none"><article class="route-item" style="background-image:url(./images/R3.png);" >
-            <div class="route-row">
-              <span class="route-number">#3</span>
-              <span class="route-name">Eiken Route</span>
-              <span class="route-status" aria-label="Route status"></span>
-            </div>
-            <p>
-              Ongeveer: <strong>145 Minuten</strong> Niveau: <em style="color: red;">Moeilijk</em>
-            </p>
-          </article>
+          <a href="./Navigation.html" style="text-decoration: none"
+            ><article
+              class="route-item"
+              style="background-image: url(./images/R3.png)"
+            >
+              <div class="route-row">
+                <span class="route-number">#3</span>
+                <span class="route-name">Eiken Route</span>
+                <span class="route-status" aria-label="Route status"></span>
+              </div>
+              <p>
+                Ongeveer: <strong>145 Minuten</strong> Niveau:
+                <em style="color: red">Moeilijk</em>
+              </p>
+            </article>
           </a>
         </section>
 
@@ -85,7 +111,7 @@
             <i class="fa fa-cloud"></i>
           </button>
           <button type="button" class="action-btn sos" aria-label="SOS call">
-           <img src="./images/SOS.png" style="height: 60px; width: 80px;"> 
+            <img src="./images/SOS.png" style="height: 60px; width: 80px" />
           </button>
         </div>
 
@@ -104,5 +130,6 @@
         </button>
       </main>
     </div>
+    <script src="./javascript/modal.js"></script>
   </body>
 </html>
