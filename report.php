@@ -74,8 +74,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             // HTML version
             $mail->Body = '
-                <h2>Nieuwe melding</h2>
-
                 <p>
                     <strong>Naam:</strong><br>
                     ' . htmlspecialchars($name) . '
