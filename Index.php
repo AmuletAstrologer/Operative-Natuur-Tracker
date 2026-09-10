@@ -360,7 +360,7 @@ $routes = mysqli_fetch_all($result, MYSQLI_ASSOC);
 
       <!-- ================= MAIN ACTIONS ================= -->
 
-      <button type="button" class="primary-btn warning-btn">
+      <a href="./report.php" class="primary-btn warning-btn">
 
         <span>
           Melding Maken
@@ -370,7 +370,7 @@ $routes = mysqli_fetch_all($result, MYSQLI_ASSOC);
           <i class="fa fa-comment"></i>
         </span>
 
-      </button>
+      </a>
 
 
       <button type="button" class="primary-btn success-btn">

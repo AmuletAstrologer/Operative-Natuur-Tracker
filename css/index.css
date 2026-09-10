@@ -375,6 +375,7 @@ body {
   color: #1f1f1f;
   cursor: pointer;
   box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.08);
+  text-decoration: none;
 }
 
 .warning-btn {
